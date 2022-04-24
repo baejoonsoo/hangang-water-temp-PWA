@@ -8,7 +8,7 @@ import { hangangDataType } from "../interface/hangangData";
 import Temp from "../components/temp";
 import DetailExplanation from "../components/detailExplanation";
 import ImgList from "../components/imgList";
-// import HangangSymbol from "./components/hangangSymbol";
+import HangangSymbol from "../components/hangangSymbol";
 // import Footer from "./components/footer";
 
 const Home: NextPage = () => {
@@ -41,9 +41,9 @@ const Home: NextPage = () => {
       <div id="explanation">
         <ImgList />
       </div>
-      {/* <div id="symbol">
+      <div id="symbol">
         <HangangSymbol />
-      </div> */}
+      </div>
       {/* <div id="footer">
         <Footer />
       </div> */}
