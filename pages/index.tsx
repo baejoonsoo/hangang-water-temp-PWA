@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { hangangDataType } from "../interface/hangangData";
-// import "./style/font.css";
 
 // import Header from "./components/\bheader";
 import Temp from "../components/temp";
