@@ -3,7 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { hangangDataType } from "../interface/hangangData";
 
-// import Header from "./components/\bheader";
+import Header from "../components/header";
 import Temp from "../components/temp";
 import DetailExplanation from "../components/detailExplanation";
 import ImgList from "../components/imgList";
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
 
   return (
     <div style={{ overflowX: "hidden" }}>
-      {/* <Header station={hangangData.station} /> */}
+      <Header station={hangangData.station} />
       <div id="temp">
         <Temp hangangData={hangangData} />
       </div>
