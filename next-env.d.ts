@@ -5,3 +5,4 @@
 // see https://nextjs.org/docs/basic-features/typescript for more information.
 
 declare module "react-reveal/*";
+declare module "react-scroll";
