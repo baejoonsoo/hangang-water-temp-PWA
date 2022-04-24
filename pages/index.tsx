@@ -1,14 +1,15 @@
 import type { NextPage } from "next";
 import axios from "axios";
 import { useEffect, useState } from "react";
-// import Header from "./components/\bheader";
-import DetailExplanation from "../components/detailExplanation";
-// import Footer from "./components/footer";
-// import HangangSymbol from "./components/hangangSymbol";
-// import ImgList from "./components/imgList";
-import Temp from "../components/temp";
 import { hangangDataType } from "../interface/hangangData";
 // import "./style/font.css";
+
+// import Header from "./components/\bheader";
+import Temp from "../components/temp";
+import DetailExplanation from "../components/detailExplanation";
+import ImgList from "../components/imgList";
+// import HangangSymbol from "./components/hangangSymbol";
+// import Footer from "./components/footer";
 
 const Home: NextPage = () => {
   const [hangangData, setHangangData] = useState<hangangDataType>({
@@ -37,9 +38,9 @@ const Home: NextPage = () => {
       <div id="tag">
         <DetailExplanation hangangData={hangangData} />
       </div>
-      {/* <div id="explanation">
+      <div id="explanation">
         <ImgList />
-      </div> */}
+      </div>
       {/* <div id="symbol">
         <HangangSymbol />
       </div> */}
