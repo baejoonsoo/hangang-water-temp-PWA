@@ -8,7 +8,7 @@ import Temp from "../components/temp";
 import DetailExplanation from "../components/detailExplanation";
 import ImgList from "../components/imgList";
 import HangangSymbol from "../components/hangangSymbol";
-// import Footer from "./components/footer";
+import Footer from "../components/footer";
 
 const Home: NextPage = () => {
   const [hangangData, setHangangData] = useState<hangangDataType>({
@@ -43,9 +43,9 @@ const Home: NextPage = () => {
       <div id="symbol">
         <HangangSymbol />
       </div>
-      {/* <div id="footer">
+      <div id="footer">
         <Footer />
-      </div> */}
+      </div>
     </div>
   );
 };
