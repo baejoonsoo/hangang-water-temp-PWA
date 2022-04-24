@@ -6,7 +6,7 @@ import DetailExplanation from "../components/detailExplanation";
 // import Footer from "./components/footer";
 // import HangangSymbol from "./components/hangangSymbol";
 // import ImgList from "./components/imgList";
-// import Temp from "./components/Temp";
+import Temp from "../components/temp";
 import { hangangDataType } from "../interface/hangangData";
 // import "./style/font.css";
 
@@ -31,9 +31,9 @@ const Home: NextPage = () => {
   return (
     <div style={{ overflowX: "hidden" }}>
       {/* <Header station={hangangData.station} /> */}
-      {/* <div id="temp">
+      <div id="temp">
         <Temp hangangData={hangangData} />
-      </div> */}
+      </div>
       <div id="tag">
         <DetailExplanation hangangData={hangangData} />
       </div>
