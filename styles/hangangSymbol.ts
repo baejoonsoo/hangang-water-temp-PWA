@@ -25,4 +25,9 @@ export const MSG = styled.h1`
   font-size: 40px;
   color: #fff;
   bottom: -45px;
+
+  @media screen and (max-width: 500px) {
+    font-size: 30px;
+    bottom: -35px;
+  }
 `;
