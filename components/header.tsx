@@ -9,8 +9,12 @@ interface props {
 const Header = ({ station }: props) => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
-  const menuClick = () => {
+  const menuIconClick = () => {
     setMenuOpen((pre) => !pre);
+  };
+
+  const menuClick = () => {
+    setMenuOpen(false);
   };
 
   return (
@@ -23,22 +27,22 @@ const Header = ({ station }: props) => {
             <p className="subTitle">{station && `${station} 한강물 온도`}</p>
           </S.Title>
         </div>
-        <S.MobileMenu onClick={menuClick} />
+        <S.MobileMenu onClick={menuIconClick} />
       </div>
       <S.Nav isOpen={menuOpen}>
-        <Link to="temp" spy={true} smooth={true}>
+        <Link to="temp" spy={true} smooth={true} onClick={menuClick}>
           <p>temp</p>
         </Link>
-        <Link to="tag" spy={true} smooth={true}>
+        <Link to="tag" spy={true} smooth={true} onClick={menuClick}>
           <p>tag</p>
         </Link>
-        <Link to="explanation" spy={true} smooth={true}>
+        <Link to="explanation" spy={true} smooth={true} onClick={menuClick}>
           <p>explanation</p>
         </Link>
-        <Link to="symbol" spy={true} smooth={true}>
+        <Link to="symbol" spy={true} smooth={true} onClick={menuClick}>
           <p>symbol</p>
         </Link>
-        <Link to="footer" spy={true} smooth={true}>
+        <Link to="footer" spy={true} smooth={true} onClick={menuClick}>
           <p>developer</p>
         </Link>
       </S.Nav>
