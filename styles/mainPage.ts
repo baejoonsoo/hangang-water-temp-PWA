@@ -38,6 +38,23 @@ export const TempData = styled.div`
   .time p {
     justify-self: end;
   }
+
+  @media (max-width: 600px) {
+    & > .temp {
+      font-size: 50px;
+      width: 300px;
+    }
+    & .topText {
+    }
+  }
+
+  @media (max-width: 400px) {
+    & > .temp {
+      width: 200px;
+    }
+    & .topText {
+    }
+  }
 `;
 
 export const HangangTempData = styled.div`
