@@ -1,0 +1,32 @@
+{
+    "theme_color": "#03005f",
+    "background_color": "#03005f",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "\uc9c0\uae08 \ud55c\uac15\uc740",
+    "short_name": "\uc9c0\uae08 \ud55c\uac15\uc740",
+    "description": "\uc2e4\uc2dc\uac04\uc73c\ub85c \uc5c5\ub370\uc774\ud2b8 \ub418\ub294 \ud55c\uac15\ubb3c \uc628\ub3c4!!",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
