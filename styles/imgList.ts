@@ -5,6 +5,8 @@ export const Page = styled.section`
   width: 100vw;
   background-color: #03005f;
 `;
+
+// title
 export const Explanation = styled.div`
   padding: 100px 0px 40px 40px;
 
@@ -21,13 +23,38 @@ export const Explanation = styled.div`
     font-size: 20px;
     color: aliceblue;
     margin-top: 10px;
+    padding-right: 30px;
+  }
+
+  @media screen and (max-width: 700px) {
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 12px;
+    }
   }
 `;
 
+// card
 export const CardList = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    height: 60vh;
+  }
 `;
 
 export const PhotoCard = styled.div`
@@ -35,6 +62,7 @@ export const PhotoCard = styled.div`
   position: relative;
   border-radius: 10px;
   padding: 60px 0 30px 0;
+  width: 30vw;
   filter: drop-shadow(0 0 5px #fff);
 
   display: grid;
@@ -58,6 +86,29 @@ export const PhotoCard = styled.div`
     color: #808080;
     font-weight: bold;
     font-size: 16px;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    span {
+      padding: 0 3px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 18vh;
+    width: 80vw;
+    padding: 0;
+    grid-template-columns: 1fr 2fr;
+
+    div {
+      justify-self: flex-start;
+
+      p {
+        justify-content: flex-start;
+      }
+    }
   }
 `;
 
@@ -77,7 +128,7 @@ export const HoverImg = styled.div`
 `;
 
 export const CardImg = styled.div`
-  width: 390px;
+  width: 30vw;
   height: 180px;
 
   background-image: url(${({ src }: { src: string }) => src});
@@ -88,5 +139,9 @@ export const CardImg = styled.div`
 
   &:hover {
     opacity: 0.7;
+  }
+
+  @media screen and (max-width: 800px) {
+    height: 18vh;
   }
 `;

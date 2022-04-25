@@ -1,6 +1,7 @@
 import * as S from "../styles/imgList";
 import Slide from "react-reveal/Slide";
 import { useState } from "react";
+import { text } from "stream/consumers";
 
 interface cardDataType {
   img: string;
@@ -70,8 +71,14 @@ const Card = ({ data }: { data: cardDataType }) => {
           onMouseEnter={mouseEnter}
           onMouseLeave={mouseLeave}
         ></S.CardImg>
-        <h1>{data.title}</h1>
-        <p>{data.text}</p>
+        <div>
+          <h1>{data.title}</h1>
+          <p>
+            {data.text.split(" ").map((text: string, index: number) => (
+              <span key={index}>{text}</span>
+            ))}
+          </p>
+        </div>
         <S.HoverImg isHidden={hoverImgHidden} />
       </S.PhotoCard>
     </a>
