@@ -125,6 +125,11 @@ export const HoverImg = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   top: 40%;
+
+  @media screen and (max-width: 800px) {
+    width: 14vw;
+    margin: 0 8vw;
+  }
 `;
 
 export const CardImg = styled.div`
