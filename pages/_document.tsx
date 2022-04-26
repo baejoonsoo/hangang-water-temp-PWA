@@ -8,7 +8,7 @@ class MyDocument extends Document {
           <link rel="manifest" href="/manifest.json" />
           <link
             rel="apple-touch-icon"
-            href="https://raw.githubusercontent.com/baejoonsoo/hangang-water-temp-PWA/main/public/icon-512x512.png"
+            href="https://raw.githubusercontent.com/baejoonsoo/hangang-water-temp-PWA/main/public/touch-icon.png"
           ></link>
           <meta name="theme-color" content="#fff" />
         </Head>
