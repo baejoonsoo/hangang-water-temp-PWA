@@ -25,6 +25,12 @@ export const HangangImg = styled.div`
     border: 3px solid #fff;
     position: absolute;
   }
+
+  @media screen and (max-width: 600px) {
+    img {
+      display: none;
+    }
+  }
 `;
 
 export const ContextDiv = styled.div`
@@ -35,6 +41,9 @@ export const ContextDiv = styled.div`
   align-content: center;
   justify-content: center;
   position: relative;
+  @media screen and (max-width: 550px) {
+    width: fit-content;
+  }
 `;
 
 export const Content = styled.h3`
@@ -45,8 +54,13 @@ export const Content = styled.h3`
   width: fit-content;
   border-radius: 40px;
   transition: 0.5s ease-in-out;
+  white-space: nowrap;
 
   :hover {
     transform: scale(1.12);
+  }
+
+  @media (max-width: 550px) {
+    font-size: 16px;
   }
 `;
