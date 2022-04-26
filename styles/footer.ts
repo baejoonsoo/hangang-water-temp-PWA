@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Footer = styled.footer`
-  background-color: #495057;
+  background-color: #03005f;
   display: flex;
   padding: 5px 30px;
   justify-content: flex-end;
@@ -10,9 +10,7 @@ export const Footer = styled.footer`
 `;
 
 export const DeveloperInfo = styled.div`
-  border-top: 2px #fff solid;
   margin: 20px;
-  padding-top: 10px;
   width: 100%;
   justify-content: flex-end;
   display: flex;
