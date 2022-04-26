@@ -9,6 +9,7 @@ import DetailExplanation from "../components/detailExplanation";
 import ImgList from "../components/imgList";
 import HangangSymbol from "../components/hangangSymbol";
 import Footer from "../components/footer";
+import styled from "@emotion/styled";
 
 const Home: NextPage = () => {
   const [hangangData, setHangangData] = useState<hangangDataType>({
@@ -28,7 +29,7 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <div style={{ overflowX: "hidden" }}>
+    <Page>
       <Header station={hangangData.station} />
       <div id="temp">
         <Temp hangangData={hangangData} />
@@ -45,8 +46,12 @@ const Home: NextPage = () => {
       <div id="footer">
         <Footer />
       </div>
-    </div>
+    </Page>
   );
 };
 
 export default Home;
+
+const Page = styled.main`
+  overflow-x: hidden;
+`;
