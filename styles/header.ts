@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 export const Header = styled.header`
   height: 80px;
   width: 100vw;
-  padding-left: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,6 +15,7 @@ export const Header = styled.header`
   z-index: 1;
 
   .logoDiv {
+    padding-left: 10px;
     display: flex;
     align-items: center;
     height: 80px;
