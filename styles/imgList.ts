@@ -75,9 +75,9 @@ export const PhotoCard = styled.div`
   h1 {
     font-family: "Cafe24Ssurround";
     padding-top: 10px;
-    padding-left: 10px;
     font-size: 20px;
     color: #202020;
+    text-align: center;
   }
 
   p {
@@ -103,6 +103,10 @@ export const PhotoCard = styled.div`
     grid-template-columns: 1fr 2fr;
 
     div {
+      h1 {
+        padding-left: 10px;
+        text-align: start;
+      }
       justify-self: flex-start;
 
       p {
