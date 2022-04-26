@@ -6,7 +6,10 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link rel="manifest" href="/manifest.json" />
-          <link rel="apple-touch-icon" href="/icon-512x512.png"></link>
+          <link
+            rel="apple-touch-icon"
+            href="https://raw.githubusercontent.com/baejoonsoo/hangang-water-temp-PWA/main/public/icon-512x512.png"
+          ></link>
           <meta name="theme-color" content="#fff" />
         </Head>
         <body>
