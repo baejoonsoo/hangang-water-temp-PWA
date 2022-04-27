@@ -40,7 +40,8 @@ export const Header = styled.header`
 `;
 
 export const Logo = styled.img`
-  height: 70%;
+  height: 56px;
+  cursor: pointer;
 `;
 
 export const Title = styled.div`

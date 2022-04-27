@@ -21,7 +21,9 @@ const Header = ({ station }: props) => {
     <S.Header>
       <div className="logoDiv">
         <div className="logo">
-          <S.Logo src="/img/Logo.svg" />
+          <Link to="temp" spy={true} smooth={true}>
+            <S.Logo src="/img/Logo.svg" />
+          </Link>
           <S.Title>
             <p className="title">지금 한강은</p>
             <p className="subTitle">{station && `${station} 한강물 온도`}</p>
