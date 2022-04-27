@@ -1,2 +1,2 @@
-declare module "react-reveal/*";
-declare module "react-scroll";
+declare module 'react-reveal/*';
+declare module 'react-scroll';

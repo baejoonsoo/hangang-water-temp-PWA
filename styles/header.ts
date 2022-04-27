@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const Header = styled.header`
   height: 80px;
@@ -100,7 +100,7 @@ export const MobileMenu = styled.div`
   width: 40px;
   padding-right: 80px;
 
-  background-image: url("/img/hamburger.svg");
+  background-image: url('/img/hamburger.svg');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

@@ -1,6 +1,6 @@
-import * as S from "../styles/imgList";
-import Slide from "react-reveal/Slide";
-import { useState } from "react";
+import * as S from '../styles/imgList';
+import Slide from 'react-reveal/Slide';
+import { useState } from 'react';
 
 interface cardDataType {
   img: string;
@@ -10,19 +10,19 @@ interface cardDataType {
 
 const cardData: cardDataType[] = [
   {
-    img: "/img/hgPhoto1.jpg",
-    title: "한강공원",
-    text: "한강의 아름다움",
+    img: '/img/hgPhoto1.jpg',
+    title: '한강공원',
+    text: '한강의 아름다움',
   },
   {
-    img: "/img/hgPhoto2.jpg",
-    title: "한강의 겨울",
-    text: "얼어붙은 한강 속 작은 길",
+    img: '/img/hgPhoto2.jpg',
+    title: '한강의 겨울',
+    text: '얼어붙은 한강 속 작은 길',
   },
   {
-    img: "/img/hgPhoto3.jpg",
-    title: "한강의 야경",
-    text: "석양 속 도시와 어우러진 한강",
+    img: '/img/hgPhoto3.jpg',
+    title: '한강의 야경',
+    text: '석양 속 도시와 어우러진 한강',
   },
 ];
 
@@ -50,7 +50,7 @@ const Card = ({ data }: { data: cardDataType }) => {
   const [hoverImgHidden, setHoverImgHidden] = useState<boolean>(true);
 
   const mouseEnter = () => {
-    console.log("enter");
+    console.log('enter');
     setHoverImgHidden(false);
   };
 
@@ -68,7 +68,7 @@ const Card = ({ data }: { data: cardDataType }) => {
       <div>
         <h1>{data.title}</h1>
         <p>
-          {data.text.split(" ").map((text: string, index: number) => (
+          {data.text.split(' ').map((text: string, index: number) => (
             <span key={index}>{text}</span>
           ))}
         </p>

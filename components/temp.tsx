@@ -1,6 +1,6 @@
-import * as S from "../styles/mainPage";
-import Slide from "react-reveal/Slide";
-import { hangangDataType } from "../interface/hangangData";
+import * as S from '../styles/mainPage';
+import Slide from 'react-reveal/Slide';
+import { hangangDataType } from '../interface/hangangData';
 
 interface props {
   hangangData: hangangDataType;
@@ -15,9 +15,9 @@ function Temp({ hangangData }: props) {
           <p className="topText">지금 한강은</p>
           <Slide left>
             <p className="temp">
-              {hangangData.temp !== "" ? (
-                "점검중" === hangangData.temp ? (
-                  "점검 중"
+              {hangangData.temp !== '' ? (
+                '점검중' === hangangData.temp ? (
+                  '점검 중'
                 ) : (
                   `${hangangData.temp}°C`
                 )

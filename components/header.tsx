@@ -1,6 +1,6 @@
-import * as S from "../styles/header";
-import { Link } from "react-scroll";
-import { useRef, useState } from "react";
+import * as S from '../styles/header';
+import { Link } from 'react-scroll';
+import { useRef, useState } from 'react';
 
 interface props {
   station: string;

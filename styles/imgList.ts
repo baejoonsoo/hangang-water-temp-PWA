@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const Page = styled.section`
   height: 100vh;
@@ -73,7 +73,7 @@ export const PhotoCard = styled.div`
   }
 
   h1 {
-    font-family: "Cafe24Ssurround";
+    font-family: 'Cafe24Ssurround';
     padding-top: 10px;
     font-size: 20px;
     color: #202020;
@@ -81,7 +81,7 @@ export const PhotoCard = styled.div`
   }
 
   p {
-    font-family: "LeferiPoint-WhiteObliqueA";
+    font-family: 'LeferiPoint-WhiteObliqueA';
     margin-top: 5px;
     color: #808080;
     font-weight: bold;
@@ -122,9 +122,9 @@ export const HoverImg = styled.div`
   width: 100px;
   pointer-events: none;
   height: 50px;
-  opacity: ${({ isHidden }: { isHidden: boolean }) => (isHidden ? "0" : "1")};
+  opacity: ${({ isHidden }: { isHidden: boolean }) => (isHidden ? '0' : '1')};
   position: absolute;
-  background-image: url("/img/hearts.svg");
+  background-image: url('/img/hearts.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

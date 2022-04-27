@@ -1,25 +1,25 @@
-import type { NextPage } from "next";
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { hangangDataType } from "../interface/hangangData";
+import type { NextPage } from 'next';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import { hangangDataType } from '../interface/hangangData';
 
-import Header from "../components/header";
-import Temp from "../components/temp";
-import DetailExplanation from "../components/detailExplanation";
-import ImgList from "../components/imgList";
-import HangangSymbol from "../components/hangangSymbol";
-import Footer from "../components/footer";
-import styled from "@emotion/styled";
+import Header from '../components/header';
+import Temp from '../components/temp';
+import DetailExplanation from '../components/detailExplanation';
+import ImgList from '../components/imgList';
+import HangangSymbol from '../components/hangangSymbol';
+import Footer from '../components/footer';
+import styled from '@emotion/styled';
 
 const Home: NextPage = () => {
   const [hangangData, setHangangData] = useState<hangangDataType>({
-    temp: "",
-    time: "",
-    station: "",
+    temp: '',
+    time: '',
+    station: '',
   });
 
   const getHangangData = () => {
-    axios.get("https://api.hangang.msub.kr").then(({ data }) => {
+    axios.get('https://api.hangang.msub.kr').then(({ data }) => {
       setHangangData(data);
     });
   };
