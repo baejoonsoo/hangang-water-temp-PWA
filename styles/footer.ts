@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const Footer = styled.footer`
   background-color: #03005f;
@@ -29,7 +29,7 @@ export const DeveloperName = styled.p`
 export const GithubIcon = styled.div`
   width: 35px;
   height: 35px;
-  background-image: url("/img/github.png");
+  background-image: url('/img/github.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -41,5 +41,5 @@ export const GithubIcon = styled.div`
 `;
 
 export const FacebookIcon = styled(GithubIcon)`
-  background-image: url("/img/facebook.png");
+  background-image: url('/img/facebook.png');
 `;

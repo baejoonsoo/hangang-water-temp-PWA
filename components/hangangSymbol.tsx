@@ -1,5 +1,5 @@
-import * as S from "../styles/hangangSymbol";
-import Fade from "react-reveal/Fade";
+import * as S from '../styles/hangangSymbol';
+import Fade from 'react-reveal/Fade';
 
 const HangangSymbol = () => {
   return (

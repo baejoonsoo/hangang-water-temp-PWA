@@ -1,6 +1,6 @@
-import * as S from "../styles/detailExplanation";
-import { useEffect, useRef } from "react";
-import { hangangDataType } from "../interface/hangangData";
+import * as S from '../styles/detailExplanation';
+import { useEffect, useRef } from 'react';
+import { hangangDataType } from '../interface/hangangData';
 
 interface props {
   hangangData: hangangDataType;
@@ -10,13 +10,13 @@ const tempCheck = (temp: string) => {
   const tempInt = parseFloat(temp);
 
   if (tempInt > 20) {
-    return "오늘은 물은 많이 따뜻하네요";
+    return '오늘은 물은 많이 따뜻하네요';
   } else if (tempInt >= 10) {
-    return "이 정도 온도면 들어가기 좋겠다";
+    return '이 정도 온도면 들어가기 좋겠다';
   } else if (tempInt < 10) {
-    return "오늘 물 많이 차가운데 조금만 기다려봐요";
+    return '오늘 물 많이 차가운데 조금만 기다려봐요';
   }
-  return "물 온도를 재는 중이에요!!";
+  return '물 온도를 재는 중이에요!!';
 };
 
 const DetailExplanation = ({ hangangData }: props) => {
@@ -26,14 +26,14 @@ const DetailExplanation = ({ hangangData }: props) => {
   const tempMsg = tempCheck(hangangData.temp);
 
   const onScroll = () => {
-    window.addEventListener("scroll", (e: any) => {
+    window.addEventListener('scroll', (e: any) => {
       const value = window.scrollY - window.innerHeight;
 
       if (imgRef && imgRef.current) {
-        imgRef.current.style.left = value + 10 + "px";
+        imgRef.current.style.left = value + 10 + 'px';
       }
       if (msgRef && msgRef.current) {
-        msgRef.current.style.right = value + 100 + "px";
+        msgRef.current.style.right = value + 100 + 'px';
       }
     });
   };

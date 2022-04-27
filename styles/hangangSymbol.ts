@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const Page = styled.div`
   height: 100vh;
@@ -7,7 +7,7 @@ export const Page = styled.div`
   background-color: #03005f;
 `;
 export const HangangImg = styled.div`
-  background-image: url("/img/hangangSymbol.jpg");
+  background-image: url('/img/hangangSymbol.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
