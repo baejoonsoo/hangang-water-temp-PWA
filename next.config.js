@@ -1,10 +1,29 @@
 const withPWA = require('next-pwa');
+const withPlugins = require('next-compose-plugins');
 
-module.exports = withPWA({
-  pwa: {
-    dest: 'public',
-    register: true,
-    skipWaiting: true,
+const nextConfig = {
+  async rewrites() {
+    return [
+      {
+        source: '/api',
+        destination: 'https://api.hangang.msub.kr/',
+      },
+    ];
   },
-  reactStrinctMode: true,
-});
+};
+module.exports = withPlugins(
+  [
+    [
+      withPWA,
+      {
+        pwa: {
+          dest: 'public',
+        },
+      },
+    ],
+    // 추가 플러그인 작성
+  ],
+  nextConfig,
+);
+
+module.exports = nextConfig;

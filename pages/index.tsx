@@ -18,10 +18,15 @@ const Home: NextPage = () => {
     station: '',
   });
 
-  const getHangangData = () => {
-    axios.get('https://api.hangang.msub.kr').then(({ data }) => {
+  const getHangangData = async () => {
+    try {
+      const { data } = await axios.get('/api');
+      console.log('data');
+      console.log(data);
       setHangangData(data);
-    });
+    } catch (error) {
+      throw error;
+    }
   };
 
   useEffect(() => {
