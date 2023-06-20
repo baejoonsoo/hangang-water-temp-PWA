@@ -21,8 +21,7 @@ const Home: NextPage = () => {
   const getHangangData = async () => {
     try {
       const { data } = await axios.get('/api');
-      console.log('data');
-      console.log(data);
+
       setHangangData(data);
     } catch (error) {
       throw error;
